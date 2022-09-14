@@ -12,6 +12,7 @@ body {
 }
 
 .box-container {
+  padding-bottom: 25px;
   width: 70%;
   margin: 0 auto;
 }
@@ -142,9 +143,9 @@ button {
 }
 
 #histories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .card {
@@ -152,8 +153,10 @@ button {
   height: 100%;
   padding: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   padding: 20px 30px;
   color: white;
   border-radius: 15px;
@@ -183,8 +186,13 @@ button {
 
 @media only screen and (max-width: 700px) {
   .box-container {
-    padding: 0 20px;
+    padding: 10px 20px;
     width: 100%;
+  }
+  #histories {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
   }
   .card {
     flex-direction: column;
