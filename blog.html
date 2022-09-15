@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   </head>
   <body>
-   <main class="bg-info container my-5 p-3 rounded-5">
+   <main class="bg-info container my-5 p-5 rounded-5">
     <h2 class="text-center ">Blog</h2>
     <h3 class="text-center text-success">Question and Answer</h3>
     <hr class="mx-5">
@@ -27,16 +27,37 @@
         </div>  
         <div>
             <h5>Q.2. difference between Global scope and Block scope.</h5>
-            <b>Ans:</b>
-            <p></p>
+            <b class="text-muted">Ans:</b>
+            <p><b>Block Scope:-</b>
+                Block Scope সাধারনত curly bracket ({----}) এর ভিতরের অংশকে বুঝায় । Java Script ES6 (2015) এর আগে, Java Script এ শুধুমাত্র Global scope এবং ফাংশন স্কোপ ছিল। ES6 দুটি গুরুত্বপূর্ণ নতুন Java Script special keyword প্রবর্তন করেছে: let এবং const। 
+                এই দুটি keyword Java script Block Scope প্রদান করে । একটি { } ব্লকের ভিতরে ঘোষিত ভেরিয়েবলগুলি ব্লকের বাইরে থেকে অ্যাক্সেস করা যাবে না ।
+            </p>
+            <p><b>Global Scope:-</b> 
+                
+                একটি programming এনভায়রনমেন্টে, global scope হল সেই scope যা অন্যান্য সমস্ত স্কোপের মধ্যে রয়েছে এবং দৃশ্যমান।
+                একটি Java script program এ যেকোনো জায়গা থেকে global variable access করা যেতে পারে। var, let এবং const দিয়ে ঘোষিত ভেরিয়েবলগুলি 
+                যখন ব্লকের বাইরে ঘোষণা করা হয় তখন variable global হয়ে থাকে । HTML-এ, Global scope হল windhow object।
+            </p>
         </div>
         <div>
-            <h5>Q.1. </h5>
-            <p><b>Ans:</b></p>
+            <h5>Q.3. How Java Script Event Loop works?</h5>
+            <p><b class="text-muted">Ans:</b>
+            Java script একটি single threaded synchronous programming language । Java script asynchronous ‍and synchronous code গুলিকে run করে event loop system  এর 
+            মাধ্যমে । Event loop এর একটা অংশ হলো Browser Engine যা programming language কে machine langauge এ convert করে ।
+            Browser Engine এর দুটি অংশ 1.Heap 2.Call stack । call stack Java script এর  code গুলি axecuted করে । call stack প্রথমে একে একে সব code কে
+            নেয় এবং synchronous গুলোকে run করে এবং  asynchronous গুলোকে Queue তে রাখে । callstack synchronous code run complete করে event loop করে 
+            Queue থেকে asynchronous code run complete করে ।
+            </p>
         </div>
         <div>
-            <h5>Q.1. </h5>
-            <p><b>Ans:</b> </p>
+            <h5>Q.4. How many ways to get undefiend?</h5>
+            <ol><b class="text-muted">Ans:</b> 
+            <li>variable declare করে value না দিয়ে ঐ variable কে access করতে চাইলে ।</li>
+            <li>Function এর কোন arguments pass করতে mistake করলে arguments return undefiend আসবে ।</li>
+            <li>কোন Function return লিখে return value না দিলে</li>
+            <li>অবজেক্টের property access করলে ওই object এ যদি ওই property না থাকে undefiend আসবে ।</li>
+            <li>array এর কোন index value access করলে ওই index এর value না থাকলে undefiend আসবে । etc.</li>
+            </ol>
         </div>
     </section>
    </main>
